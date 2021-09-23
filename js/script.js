@@ -35,9 +35,9 @@ $(function(){
 
 function render(){
     $city.text(weatherData.name);
-    $temp.text(weatherData.main.temp);
-    $feel.text(weatherData.main.feels_like);
-    $forecast.text(weatherData.weather[0].description);
+    $temp.text("Temperature: " + weatherData.main.temp);
+    $feel.text("Feels Like:" + weatherData.main.feels_like);
+    $forecast.text("Weather: " + weatherData.weather[0].description);
 }
 
 
